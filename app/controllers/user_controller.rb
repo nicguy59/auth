@@ -29,7 +29,7 @@ class UserController < ApplicationController
 private
 
 def user_params
-  params.require(:user).permit(:name, :email, :passwork_confirmation)
+  params.require(:user).permit(:name, :email, :password_confirmation)
 end
 
 def lookup_user
